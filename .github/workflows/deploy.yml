@@ -24,7 +24,7 @@ jobs:
       name: Installing packages
 
     - run: npm run build 
-      name: Generating Production Build
+      name: Production Build 
       
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
