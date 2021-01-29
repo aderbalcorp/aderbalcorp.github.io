@@ -1,8 +1,12 @@
 import Link from 'next/link'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-      <div>
+      <Layout
+          siteTitle="Home"
+          siteDescription="Aderbal"
+      >
         <h1>Home</h1>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
@@ -10,6 +14,6 @@ export default function Home() {
           <Link href="/contact">Contact Us</Link>
           <Link href="/terms">Terms of Service</Link>
           <Link href="/policy">Privacy Policy</Link>
-      </div>
+      </Layout>
   )
 }
