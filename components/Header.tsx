@@ -1,23 +1,25 @@
+import Link from 'next/link'
+
 export default function Header() {
 return(
     <div className="header absolute-light">
         <div className="container">
             <div className="logo">
-                <h4 className="uppercase letter-spacing-2"><a href="#">aderbal</a></h4>
+                <h4 className="uppercase letter-spacing-2"><Link href="/">aderbal</Link></h4>
             </div>
             <div className="header-menu-wrapper">
                 <ul className="header-menu">
                     <li className="m-item">
-                        <a className="m-link" href="/">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li className="m-item">
-                        <a className="m-link" href="/blog">Blog</a>
+                        <Link href="/blog">Blog</Link>
                     </li>
                     <li className="m-item">
-                        <a className="m-link" href="/contact">Contact</a>
+                        <Link href="/contact">Contact</Link>
                     </li>
                     <li className="m-item">
-                        <a className="m-link" href="/contact">About</a>
+                        <Link href="/contact">About</Link>
                     </li>
                 </ul> 
             </div>

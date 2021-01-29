@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
     return(
   <div className="section border-top">
@@ -5,8 +7,8 @@ export default function Footer() {
       <div className="row align-items-center">
         <div className="col-12 col-md-6 text-center text-md-left">
           <ul className="list-inline-dash margin-bottom-10">
-            <li><a href="/terms">Terms of Service</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><Link href="/terms">Terms of Service</Link></li>
+            <li><Link href="/policy">Privacy Policy</Link></li>
           </ul>
           <p>© 2021 ADERBAL. All Rights Reserved.</p>
         </div>
