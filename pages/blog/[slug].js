@@ -12,7 +12,7 @@ export default function Post({ post }) {
 
 return(
     <div>
-        Hello!
+        {post.content} 
     </div>
 )
 }
