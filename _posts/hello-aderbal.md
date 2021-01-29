@@ -10,4 +10,4 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-Hi Aderbal. This is the start.
+Hello Aderbal
