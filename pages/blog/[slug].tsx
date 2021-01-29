@@ -18,7 +18,7 @@ return(
 }
 
 export async function getStaticProps({ params }) {
-    const post = getPostBySlug(params.slug, [
+    const post: any = getPostBySlug(params.slug, [
         'title',
         'date',
         'slug',
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
     const posts = getAllPosts(['slug'])
 
     return {
-        paths: posts.map((post) => {
+        paths: posts.map((post: any) => {
             return {
                 params: {
                     slug: post.slug,
