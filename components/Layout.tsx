@@ -1,4 +1,5 @@
 import Meta from "./Meta"
+import Header from "./Header"
 
 export default function Layout(props) {
     return(
@@ -7,7 +8,11 @@ export default function Layout(props) {
                 siteTitle={props.siteTitle}
                 siteDescription={props.siteDescription}
             />
+
+            <div className="wrapper bg-dark">
+                <Header />
                 {props.children}
+            </div>
         </div>
     )
 }
