@@ -7,13 +7,17 @@ export default function Home() {
           siteTitle="Home"
           siteDescription="Aderbal"
       >
-        <h1>Home</h1>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact Us</Link>
-          <Link href="/terms">Terms of Service</Link>
-          <Link href="/policy">Privacy Policy</Link>
+          <div className="wrapper">
+              <div className="header">
+                  Hello!
+              </div>
+
+            Hi
+
+              <div className="section-xs">
+                  Footer
+              </div>
+          </div>
       </Layout>
   )
 }

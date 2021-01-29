@@ -7,9 +7,7 @@ export default function Layout(props) {
                 siteTitle={props.siteTitle}
                 siteDescription={props.siteDescription}
             />
-            <body>
                 {props.children}
-            </body>
         </div>
     )
 }
