@@ -1,1 +1,36 @@
-@import 'arty/main.scss'
+/*
+ * Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/print";
+
+/*
+ * Arty Helpers 
+ */
+@import "arty/helpers/variables";
+@import "arty/helpers/mixins";
+
+/*
+ * Arty Common Styles 
+ */
+@import "arty/basic/base";
+@import "arty/basic/list";
+@import "arty/basic/typography";
+@import "arty/elements/button";
+@import "arty/components/header";
+@import "arty/components/section";
+@import "arty/helpers/utilities";
