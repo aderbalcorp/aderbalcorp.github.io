@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import ErrorPage from '../_error'
 
 import Layout from '../../components/Layout'
+import DateFormatter from '../../components/date-formatter'
 
 import markdownToHtml from '../../lib/markdownToHtml'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
@@ -22,13 +23,12 @@ return(
             <div className="container text-center">
                 <div className="row">
                     <div className="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                        <p className="font-small uppercase font-family-secondary"><a href="#">Category</a></p>
                         <div className="margin-top-20 margin-bottom-20">
-                            <h1 className="font-weight-normal">Blog Single Standard</h1>
+                            <h1 className="font-weight-normal">{post.title}</h1>
                         </div>
                         <ul className="list-inline-dash">
-                            <li><a href="#">by Admin</a></li>
-                            <li><a href="#">Feb 6, 2020</a></li>
+                            <li><a href="#">by {post.author.name}</a></li>
+                            <li><a href="#"><DateFormatter dateString={post.date} /></a></li>
                         </ul>
                     </div>
                 </div>
