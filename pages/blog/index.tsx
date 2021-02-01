@@ -1,31 +1,54 @@
 import Link from 'next/link'
 import Layout from '../../components/Layout'
+import { getAllPosts, getPostSlugs } from '../../lib/api'
+import Post from '../../types/post'
 
-export default function Blog() {
+type Props = {
+    allPosts: Post[]
+}
+
+export default function Blog({ posts }: Props) {
   return (
       <Layout
           siteTitle="Blog"
           siteDescription="Aderbal"
       >
 
-  {/* Hero section */}
   <div className="section-xl">
     <div className="container">
       <div className="row">
         <div className="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-          <div className="margin-bottom-30">
-            <p className="font-weight-medium font-family-secondary uppercase letter-spacing-2 text-white-04">We Believe That</p>
-          </div>
           <h1>Blog</h1>
-          <div className="margin-top-50">
-            <a className="button button-xl button-fancy-1-outline-white button-font-2" href="#">Get In Touch</a>
+          <div className="section">
+              <div className="container">
+                  <div className="row">
+                      <div className="col-16">
+
+                  {posts.map((post) => (
+                          <div className="margin-top-30">
+                              <p className="font-small font-family-secondary uppercase margin-bottom-10">Feb 6, 2020</p>
+                              <h4 className="font-weight-medium"><Link href={"/blog/" + post.slug}>{post.title}</Link></h4>
+                          </div>
+                  ))}
+                      </div>
+                  </div>
+              </div>
           </div>
         </div>
-      </div>{/* end row */}
-    </div>{/* end container */}
+      </div>
+    </div>
   </div>
-  {/* end Hero section */}
 
         </Layout>
   )
+}
+
+export async function getStaticProps({params}) {
+    const posts = getAllPosts(['slug', 'title', 'date'])
+
+    return {
+        props: {
+            posts: posts
+        }
+    }
 }
