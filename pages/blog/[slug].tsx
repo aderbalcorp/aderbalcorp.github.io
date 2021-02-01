@@ -40,9 +40,9 @@ return(
                 <div className="padding-y-30 padding-top-0">
                     <div className="container text-center">
                         <ul className="list-inline-sm">
-                            <li><span className="button button-xs button-outline-gray" href="#">#Art</span></li>
-                            <li><span className="button button-xs button-outline-gray" href="#">#Fashion</span></li>
-                            <li><span className="button button-xs button-outline-gray" href="#">#Lifestyle</span></li>
+                            <li><span className="button button-xs button-outline-gray">#Art</span></li>
+                            <li><span className="button button-xs button-outline-gray">#Fashion</span></li>
+                            <li><span className="button button-xs button-outline-gray">#Lifestyle</span></li>
                         </ul>
                     </div>
                 </div>
