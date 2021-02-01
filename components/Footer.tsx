@@ -14,8 +14,8 @@ export default function Footer() {
         </div>
         <div className="col-12 col-md-6 text-center text-md-right">
           <ul className="list-inline-sm">
-            <li><a className="button-circle button-circle-sm button-circle-white icon-xl" href="#"><i className="fab fa-github" /></a></li>
-            <li><a className="button-circle button-circle-sm button-circle-white icon-xl" href="#"><i className="fab fa-hacker-news" /></a></li>
+            <li><a className="button-circle button-circle-sm button-circle-white icon-xl" target="_blank" href="https://github.com/aderbalcorp"><i className="fab fa-github" /></a></li>
+            <li><a className="button-circle button-circle-sm button-circle-white icon-xl" target="_blank" href="https://news.ycombinator.com/user?id=csomar"><i className="fab fa-hacker-news" /></a></li>
           </ul>
         </div>
       </div>
