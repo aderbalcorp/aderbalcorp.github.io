@@ -8,7 +8,6 @@ export default function Home() {
           siteDescription="Aderbal"
       >
 
-  {/* Hero section */}
   <div className="section-xl">
     <div className="container">
       <div className="row">
@@ -21,10 +20,9 @@ export default function Home() {
             <a className="button button-xl button-fancy-1-outline-white button-font-2" href="#">Get In Touch</a>
           </div>
         </div>
-      </div>{/* end row */}
-    </div>{/* end container */}
+      </div>
+    </div>
   </div>
-  {/* end Hero section */}
 
         </Layout>
   )
