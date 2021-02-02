@@ -27,8 +27,8 @@ return(
                             <h1 className="font-weight-normal">{post.title}</h1>
                         </div>
                         <ul className="list-inline-dash">
-                            <li><a href="#">by {post.author.name}</a></li>
-                            <li><a href="#"><DateFormatter dateString={post.date} /></a></li>
+                            <li><span>by {post.author.name}</span></li>
+                            <li><a href={"/blog/" + post.slug}><DateFormatter dateString={post.date} /></a></li>
                         </ul>
                     </div>
                 </div>
