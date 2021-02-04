@@ -12,15 +12,30 @@ export default function Contact() {
     <div className="container">
       <div className="row">
         <div className="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-          <div className="margin-bottom-30">
-            <p className="font-weight-medium font-family-secondary uppercase letter-spacing-2 text-white-04">We Believe That</p>
-          </div>
           <h1>Contact</h1>
-          <div className="margin-top-50">
-            <a className="button button-xl button-fancy-1-outline-white button-font-2" href="#">Get In Touch</a>
-          </div>
         </div>
       </div>
+<div className="row">
+    <div className="col-12 col-lg-10 offset-xl-1 col-xl-8 offset-xl-2 text-lg-center">
+        <form method="post" id="contactform" className="style-3">
+            <div className="form-row">
+                <div className="col-12 col-sm-6">
+                    <input type="text" id="name" name="name" placeholder="Name" required={true} />
+                </div>
+                <div className="col-12 col-sm-6">
+                    <input type="email" id="email" name="email" placeholder="E-Mail" required={true} />
+                </div>
+            </div>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required={true} />
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <button className="button button-lg button-rounded button-outline-white" type="submit">Send Message</button>
+        </form>
+        <div className="submit-result">
+            <span id="success">Thank you! Your Message has been sent.</span>
+            <span id="error">Something went wrong, Please try again!</span>
+        </div>
+    </div>
+</div>
     </div>
   </div>
 

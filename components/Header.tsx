@@ -19,7 +19,7 @@ return(
                         <Link href="/contact">Contact</Link>
                     </li>
                     <li className="m-item">
-                        <Link href="/contact">About</Link>
+                        <Link href="/about">About</Link>
                     </li>
                 </ul> 
             </div>
