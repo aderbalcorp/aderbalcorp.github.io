@@ -8,7 +8,6 @@ export default function Contact() {
           siteDescription="Aderbal"
       >
 
-  {/* Hero section */}
   <div className="section-xl">
     <div className="container">
       <div className="row">
@@ -16,15 +15,14 @@ export default function Contact() {
           <div className="margin-bottom-30">
             <p className="font-weight-medium font-family-secondary uppercase letter-spacing-2 text-white-04">We Believe That</p>
           </div>
-          <h1>About</h1>
+          <h1>Contact</h1>
           <div className="margin-top-50">
             <a className="button button-xl button-fancy-1-outline-white button-font-2" href="#">Get In Touch</a>
           </div>
         </div>
-      </div>{/* end row */}
-    </div>{/* end container */}
+      </div>
+    </div>
   </div>
-  {/* end Hero section */}
 
         </Layout>
   )
