@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.9",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.6.0",
     "date-fns": "^2.16.1",
+    "graphql": "^15.5.0",
     "gray-matter": "^4.0.2",
     "next": "10.0.5",
     "react": "17.0.1",

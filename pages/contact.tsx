@@ -1,6 +1,24 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
+
+const client = new ApolloClient({
+    uri: "https://hello-world.aderbal.workers.dev/",
+    cache: new InMemoryCache()
+})
+
+client
+.query({
+    query: gql`
+    query Query {
+        hello(response: "Omar")
+    }
+    `
+}).then(result => console.log(result))
+
+console.log(client)
+
 export default function Contact() {
   return (
       <Layout
