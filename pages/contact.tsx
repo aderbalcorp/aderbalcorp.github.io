@@ -2,22 +2,6 @@ import Link from "next/link"
 import Layout from "../components/Layout"
 import ContactForm from "../components/contact-form"
 
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
-
-const client = new ApolloClient({
-    uri: "https://aderbal-contact.aderbal.workers.dev",
-    cache: new InMemoryCache()
-})
-
-//client
-//.query({
-//query: gql`
-//query Query {
-//sendMail(name: "Omar", email: "h", phone: "", message: "")
-//}
-//`
-//}).then(result => console.log(result))
-
 export default function Contact() {
     return (
         <Layout
